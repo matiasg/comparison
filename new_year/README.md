@@ -27,8 +27,8 @@ Therefore, the number of combinations to try is
 ```
 3^(N-1) * C(2(N-1), N-1) / N
 ```
-Asymptotically, this grows as `O(3^N * 4^N / N^(3/2)) = O(12^N / N^(3/2))`.
 For the original problem `N=10`, this is 95,698,746 combinations.
+Asymptotically, this grows as `O(3^N * 4^N / N^(3/2)) = O(12^N / N^(3/2))`.
 
 One might do better by not considering some combinations that are known in
 advance to give the same results as others already explored. But for the
