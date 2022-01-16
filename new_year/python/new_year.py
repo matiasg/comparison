@@ -21,7 +21,6 @@ OPERATORS = [
     (lambda a, b: a + b),
     (lambda a, b: a - b),
     (lambda a, b: a * b),
-    # (lambda a, b: a / b),
 ]
 
 
@@ -57,16 +56,6 @@ def apply_all(all_ops, orders):
                                  j, i, res, len(ret))
                     last_size = current_size
     return ret
-
-
-def apply_until(all_opps, orders, value):
-    for i, ops in enumerate(all_opps):
-        for order in orders:
-            res = apply(ops, order)
-            if res == value:
-                print(ops, order)
-                return (ops, order)
-        print(i)
 
 
 if __name__ == '__main__':
